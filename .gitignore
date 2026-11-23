@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.env
+.env.*
+*.env
+v2/lab_config.py
+v2/out_lab/
+v2/agent/runs/
+v2/agent/e2e/
+*.log
+*.zip
+.vscode/
+.azure*/
