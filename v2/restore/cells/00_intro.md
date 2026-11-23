@@ -1,5 +1,12 @@
 # Fabric migration (v2) – step 5: restore the Fabric items from Git
 
+> **AS-IS - independent personal/community project.**
+> These notebooks are provided **AS-IS**, without warranty of any kind, express or implied.
+> They are a personal/community contribution, not a Microsoft product or service, and are not published on
+> behalf of, endorsed, supported or warranted by Microsoft. They do not represent or bind Microsoft and
+> create no obligation or commitment by Microsoft. Product names, APIs and documentation are technical
+> references only. Use at your own risk and validate in your own environment before production or deletion.
+
 Run after the workspaces have moved. Fabric recreates the items itself from the locked snapshot commit (Git
 integration), so references between items in the same workspace are rebuilt by Fabric. Data comes back in
 step 6 with `V2_6_Restore_Data`; this notebook prints its settings.

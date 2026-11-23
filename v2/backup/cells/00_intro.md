@@ -1,5 +1,12 @@
 # V2_2 – Back up definitions and data to ADLS (secondary copy)
 
+> **AS-IS - independent personal/community project.**
+> These notebooks are provided **AS-IS**, without warranty of any kind, express or implied.
+> They are a personal/community contribution, not a Microsoft product or service, and are not published on
+> behalf of, endorsed, supported or warranted by Microsoft. They do not represent or bind Microsoft and
+> create no obligation or commitment by Microsoft. Product names, APIs and documentation are technical
+> references only. Use at your own risk and validate in your own environment before production or deletion.
+
 Run this **after the change freeze starts and before `V2_3_Git_Snapshot`**. The workspace's own Git link
 (V2_1) is the primary copy of the definitions; this notebook saves the **secondary copy of the definitions and
 all the data** in ADLS. V2_3 checks this run, V2_4 refuses to delete an item whose backup isn't OK, and V2_6

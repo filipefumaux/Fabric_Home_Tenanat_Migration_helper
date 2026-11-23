@@ -3,12 +3,20 @@
 Community-maintained Python notebooks for backing up, safely removing, and restoring Microsoft Fabric items
 around an approved tenant migration.
 
+## AS-IS and no Microsoft representation
+
+This is an independent personal/community contribution, shared by its maintainer in a personal capacity.
+It is provided **AS-IS, without warranty of any kind, express or implied**, under the [MIT license](LICENSE).
+It is not a Microsoft product or service and is not published on behalf of, endorsed, supported or warranted
+by Microsoft. This project does not represent or bind Microsoft and creates no obligation or commitment by
+Microsoft. References to Microsoft products, APIs and documentation are technical references only, not an
+endorsement or support promise. Use at your own risk and validate the code in your own environment.
+
 **Warning: this toolkit can permanently delete Fabric items. Start with dry runs and a disposable test
 workspace. A successful lab test is not approval to run against production.**
 
-This is an independent project, not an official Microsoft product or a replacement for your migration
-programme's requirements. GitHub hosts this toolkit's source; the notebooks' workspace Git integration and
-snapshot implementation use **Azure DevOps**, not the GitHub provider.
+This toolkit does not replace your migration programme's requirements. GitHub hosts its source; the notebooks'
+workspace Git integration and snapshot implementation use **Azure DevOps**, not the GitHub provider.
 
 ## Notebook sequence
 
@@ -23,7 +31,7 @@ snapshot implementation use **Azure DevOps**, not the GitHub provider.
 | 5 | V2_5_Restore_From_Git | Restore definitions and repair references on confirmation |
 | 6 | V2_6_Restore_Data | Restore and verify supported data |
 
-Read the [runbook](v2/out/README_v2.md) and [authentication/setup guide](v2/out/SETUP_DevOps_Access_PAT_or_SP.md)
+Read the [runbook](v2/out/README.md) and [authentication/setup guide](v2/out/SETUP_DevOps_Access_PAT_or_SP.md)
 before importing or running notebooks.
 
 ## Safety boundaries

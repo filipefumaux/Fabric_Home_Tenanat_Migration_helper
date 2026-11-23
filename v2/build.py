@@ -8,6 +8,11 @@ LAB_MODE = "--lab" in sys.argv
 os.makedirs(OUT, exist_ok=True)
 HELPERS = open(os.path.join(HERE, "common/base.py"), encoding="utf-8").read().rstrip() + "\n" + open(os.path.join(HERE, "common/extra.py"), encoding="utf-8").read()
 REDACTION = open(os.path.join(HERE, "common/redaction.py"), encoding="utf-8").read().rstrip() + "\n"
+AS_IS_NOTICE = (
+    "# AS-IS, without warranty of any kind; independent personal/community code.\n"
+    "# Not a Microsoft product or service; not published on behalf of Microsoft.\n"
+    "# Does not represent or bind Microsoft; no Microsoft endorsement, warranty or support commitment.\n"
+)
 NOTEBOOKS = {"permcheck": "V2_0_Permission_Check.ipynb", "connect": "V2_1_Connect_Workspaces_To_Git.ipynb",
              "backup": "V2_2_Backup_Data.ipynb", "snapshot": "V2_3_Git_Snapshot.ipynb", "delete": "V2_4_Delete_Fabric_Items.ipynb",
              "restore": "V2_5_Restore_From_Git.ipynb", "data": "V2_6_Restore_Data.ipynb",
@@ -55,7 +60,7 @@ for folder, fname in NOTEBOOKS.items():
     for name in files:
         text = (HELPERS + (DATA_HELPERS if folder in ("data", "permcheck") else "")) if name == "03_helpers.py" and not own else open(os.path.join(cdir, name), encoding="utf-8").read()
         if name == "03_helpers.py":
-            text = REDACTION + text
+            text = AS_IS_NOTICE + REDACTION + text
         if LAB_MODE and name.startswith("01_settings"):
             text = apply_lab(folder, text)
         cid = uuid.uuid5(uuid.NAMESPACE_URL, f"fabric-item-migration-v2/{folder}/{name}").hex[:12]

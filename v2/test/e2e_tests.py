@@ -483,10 +483,10 @@ e2e.lab_e2e = lambda: {"RUNNER_WORKSPACE_ID": RUNNER, "REHEARSAL_WORKSPACE_IDS":
 with contextlib.redirect_stdout(io.StringIO()) as buf:
     rc = e2e.main(["verify-build", st["id"], "--notebooks", d2])
 check(rc == 0 and "GREEN; " in buf.getvalue() and "no lab values" in buf.getvalue(), buf.getvalue())
-open(os.path.join(d2, "README_v2.md"), "w").write("user@private-test-marker.net")
+open(os.path.join(d2, "README.md"), "w").write("user@private-test-marker.net")
 with contextlib.redirect_stdout(io.StringIO()) as buf:
     rc = e2e.main(["verify-build", st["id"], "--notebooks", d2])
-check(rc == 1 and "LAB VALUES FOUND" in buf.getvalue() and "README_v2.md: private-test-marker" in buf.getvalue(), buf.getvalue())
+check(rc == 1 and "LAB VALUES FOUND" in buf.getvalue() and "README.md: private-test-marker" in buf.getvalue(), buf.getvalue())
 
 print("E17 stress profile: four independent sets, one measured large copy and three measured small copies")
 w = reuse_world()

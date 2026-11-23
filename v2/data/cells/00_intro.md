@@ -1,5 +1,12 @@
 # Fabric migration (v2) – step 6: restore the data
 
+> **AS-IS - independent personal/community project.**
+> These notebooks are provided **AS-IS**, without warranty of any kind, express or implied.
+> They are a personal/community contribution, not a Microsoft product or service, and are not published on
+> behalf of, endorsed, supported or warranted by Microsoft. They do not represent or bind Microsoft and
+> create no obligation or commitment by Microsoft. Product names, APIs and documentation are technical
+> references only. Use at your own risk and validate in your own environment before production or deletion.
+
 Run after step 5 (`V2_5_Restore_From_Git`) has brought the items back (from Git, or from the raw copy if Azure DevOps was unavailable).
 Git holds only definitions, so the restored Lakehouses, Warehouses and KQL databases are **empty**. This notebook
 loads their data from the backup run that the snapshot recorded (`SECONDARY_BACKUP_RUN_ID`, written by

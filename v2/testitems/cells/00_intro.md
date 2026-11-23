@@ -1,5 +1,12 @@
 # V2_T – Create test items (run in your test tenant before production)
 
+> **AS-IS - independent personal/community project.**
+> These notebooks are provided **AS-IS**, without warranty of any kind, express or implied.
+> They are a personal/community contribution, not a Microsoft product or service, and are not published on
+> behalf of, endorsed, supported or warranted by Microsoft. They do not represent or bind Microsoft and
+> create no obligation or commitment by Microsoft. Product names, APIs and documentation are technical
+> references only. Use at your own risk and validate in your own environment before production or deletion.
+
 Creates one test item of each type the v2 notebooks cover, with a little data, in **one test workspace**. Run the
 whole chain V2_0 to V2_6 against that workspace in your test tenant before touching production: same tenant
 settings, capacity, Key Vault, ADLS, Azure DevOps and ADX as the real run.

@@ -1,5 +1,12 @@
 # Fabric migration (v2) – step 0: permission and connectivity check
 
+> **AS-IS - independent personal/community project.**
+> These notebooks are provided **AS-IS**, without warranty of any kind, express or implied.
+> They are a personal/community contribution, not a Microsoft product or service, and are not published on
+> behalf of, endorsed, supported or warranted by Microsoft. They do not represent or bind Microsoft and
+> create no obligation or commitment by Microsoft. Product names, APIs and documentation are technical
+> references only. Use at your own risk and validate in your own environment before production or deletion.
+
 Run this first, as the person (or identity) who will run the other v2 notebooks. It checks every permission and
 network path they need and tells you how to fix what's missing. It changes nothing in Fabric.
 

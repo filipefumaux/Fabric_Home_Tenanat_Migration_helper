@@ -1,5 +1,12 @@
 # Fabric migration (v2) – step 4: delete the Fabric items
 
+> **AS-IS - independent personal/community project.**
+> These notebooks are provided **AS-IS**, without warranty of any kind, express or implied.
+> They are a personal/community contribution, not a Microsoft product or service, and are not published on
+> behalf of, endorsed, supported or warranted by Microsoft. They do not represent or bind Microsoft and
+> create no obligation or commitment by Microsoft. Product names, APIs and documentation are technical
+> references only. Use at your own risk and validate in your own environment before production or deletion.
+
 **This notebook permanently deletes Fabric items (and the data in Lakehouses, Warehouses and KQL databases).**
 Use it only after step 3 (`V2_3_Git_Snapshot`) marked the workspace READY. Power BI items are never touched.
 

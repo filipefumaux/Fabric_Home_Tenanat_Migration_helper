@@ -1,5 +1,12 @@
 # Fabric migration v2 – Git-first backup and restore (test version)
 
+> **AS-IS - independent personal/community project.**
+> These notebooks are provided **AS-IS**, without warranty of any kind, express or implied.
+> They are a personal/community contribution, not a Microsoft product or service, and are not published on
+> behalf of, endorsed, supported or warranted by Microsoft. They do not represent or bind Microsoft and
+> create no obligation or commitment by Microsoft. Product names, APIs and documentation are technical
+> references only. Use at your own risk and validate in your own environment before production or deletion.
+
 Three copies of every definition: **Azure DevOps** (Fabric Git integration, primary), the **raw copy** taken with
 the Git snapshot (ADLS, fallback if DevOps has a problem) and the V2_2 backup run (ADLS, secondary, plus the data).
 

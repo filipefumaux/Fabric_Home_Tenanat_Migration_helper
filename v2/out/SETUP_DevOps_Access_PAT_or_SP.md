@@ -1,5 +1,12 @@
 # Setup: Azure DevOps access for the v2 notebooks (PAT or service principal)
 
+> **AS-IS - independent personal/community project.**
+> These notebooks are provided **AS-IS**, without warranty of any kind, express or implied.
+> They are a personal/community contribution, not a Microsoft product or service, and are not published on
+> behalf of, endorsed, supported or warranted by Microsoft. They do not represent or bind Microsoft and
+> create no obligation or commitment by Microsoft. Product names, APIs and documentation are technical
+> references only. Use at your own risk and validate in your own environment before production or deletion.
+
 The v2 notebooks talk to Azure DevOps in **two separate ways**. Set up both before running V2_0.
 
 | | What it does | Who signs in | Set up in |
@@ -53,7 +60,7 @@ Choose **one** option for B. Both work; the table helps to choose.
 ## 2. Option service principal
 
 This section covers Azure DevOps. The full list of what the app needs (DevOps, Fabric tenant setting, ADX,
-storage) is in README_v2.md, section **"Service principal permissions (all in one place)"**.
+storage) is in [README.md](README.md), section **"Service principal permissions (all in one place)"**.
 
 **Who:** an Entra administrator (step 1), a DevOps Project Collection Administrator (steps 2–3), a Key Vault
 owner (step 4).

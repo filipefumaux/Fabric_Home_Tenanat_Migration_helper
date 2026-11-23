@@ -1,5 +1,12 @@
 # Fabric migration (v2) – step 3: Git snapshot and readiness check
 
+> **AS-IS - independent personal/community project.**
+> These notebooks are provided **AS-IS**, without warranty of any kind, express or implied.
+> They are a personal/community contribution, not a Microsoft product or service, and are not published on
+> behalf of, endorsed, supported or warranted by Microsoft. They do not represent or bind Microsoft and
+> create no obligation or commitment by Microsoft. Product names, APIs and documentation are technical
+> references only. Use at your own risk and validate in your own environment before production or deletion.
+
 Part of the tenant-migration runbook. **Azure DevOps (Fabric Git integration) is the primary copy of the item
 definitions; V2_2's copy in ADLS is the secondary copy and the only copy of the data.**
 
